@@ -57,6 +57,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- Runs the plain-Java console demo: ./mvnw compile exec:java -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.example.expenseexporter.app.ConsoleDemo</mainClass>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

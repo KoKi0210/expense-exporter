@@ -1,4 +1,4 @@
-package com.example.expense_exporter;
+package com.example.expenseexporter;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,3 +1,24 @@
 spring:
   application:
     name: expense-exporter
+
+server:
+  port: 8081
+
+expense:
+  rules:
+    INTERN:
+      type: FIXED_AMOUNT
+      amount: "100.00"
+    JUNIOR:
+      type: FIXED_AMOUNT
+      amount: "300.00"
+    SENIOR:
+      type: PERCENTAGE_OF_SALARY
+      percent: "5"
+    MANAGER:
+      type: PERCENTAGE_OF_SALARY
+      percent: "10"
+    DIRECTOR:
+      type: CUSTOM_FORMULA
+      formula: "salary * 0.12 + 500"
